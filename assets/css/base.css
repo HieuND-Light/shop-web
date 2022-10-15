@@ -1,4 +1,5 @@
 :root {
+    --primary-color: #fb5533;
     --white: #fff;
     --black: #000;
     --text-color: #333;
@@ -36,6 +37,16 @@ html {
     from {
         opacity: 0;
     } to {
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    } to {
+        transform: scale(1);
         opacity: 1;
     }
 }
