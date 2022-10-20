@@ -29,6 +29,8 @@ html {
     display: none !important;
 }
 
+/* Responsive */
+
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -42,6 +44,17 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.grid__column-2 {
+    padding: 0 12px;
+    width: 16.66666%;
+}
+
+.grid__column-10 {
+    padding: 0 12px;
+    width: 83.33333%
 }
 
 /* Button */
@@ -58,9 +71,10 @@ html {
     outline: none;
     cursor: pointer;
     color: #333;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--white);
 }
 
 .btn.btn--normal:hover {
