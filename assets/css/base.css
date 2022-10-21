@@ -44,17 +44,22 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -12px;
+    margin: 0 -6px;
 }
 
 .grid__column-2 {
-    padding: 0 12px;
+    padding: 0 6px;
     width: 16.66666%;
 }
 
 .grid__column-10 {
-    padding: 0 12px;
+    padding: 0 6px;
     width: 83.33333%
+}
+
+.grid__column-2-4 {
+    padding: 0 6px;
+    width: 20%;
 }
 
 /* Button */
