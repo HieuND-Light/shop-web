@@ -56,7 +56,6 @@
 .header__navbar-item--link:hover,
 .header__navbar-icon--link:hover {
     color: rgba(255, 255, 255, 0.7);
-    /* opacity: 0.7; */
     cursor: pointer;
 }
 
@@ -103,8 +102,8 @@
     border-radius: 2px;
     animation: fadeIn ease 0.3s;
     will-change: opacity, transform;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .header__qr:before {
@@ -141,18 +140,18 @@
 /* Header lang */
 
 .header__lang {
+    display: none;
     position: absolute;
     width: 200px;
     top: 120%;
     right: -30%;
     background-color: var(--white);
     color: var(--black);
-    display: none;
     transform-origin: 82% top;
     animation: grow ease-in 0.2s;
     will-change: opacity, transform;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .header__lang::before {
@@ -191,6 +190,7 @@
 /* Header notify */
 
 .header__notify {
+    display: none;
     position: absolute;
     top: 120%;
     right: 0;
@@ -201,9 +201,8 @@
     transform-origin: 95% top;
     animation: grow ease-in 0.2s;
     will-change: opacity, transform;
-    display: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .header__notify::before {
@@ -307,6 +306,7 @@
 /* Modal */
 
 .modal {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -314,7 +314,6 @@
     left: 0;
     transform-origin: center;
     animation: fadeIn linear 0.2s;
-    display: none;
 }
 
 .modal__overlay {
@@ -536,15 +535,15 @@
 }
 
 .search__history {
+    display: none;
     position: absolute;
     top: 110%;
     left: 0;
     right: 16px;
     background-color: var(--white);
     border-radius: 3px;
-    box-shadow: 0 0 3px #999;
-    display: none;
-    z-index: 2;
+    box-shadow: 0 1px 3px #999;
+    z-index: 1;
 }
 
 .search__history-heading {
@@ -595,6 +594,7 @@
 }
 
 .cart__list {
+    display: none;
     position: absolute;
     top: 110%;
     right: -10px;
@@ -604,7 +604,6 @@
     box-shadow: 0 1px 30px rgba(0, 0, 0, 0.2);
     transform-origin: 93% top;
     animation: grow ease 0.3s;
-    display: none;
     cursor: default;
     z-index: 2;
 }
@@ -663,6 +662,8 @@
     padding-left: 0;
     list-style: none;
     margin: 0;
+    height: 35vh;
+    overflow-y: auto;
 }
 
 .cart__list-item {
@@ -694,9 +695,18 @@
 
 .item__name {
     font-size: 1.4rem;
+    line-height: 2rem;
+    height: 4rem;
+    overflow: hidden;
     font-weight: 500;
     color: var(--text-color);
     margin: 0;
+    flex: 1;
+    text-align: left;
+    padding-right: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .item__price {
@@ -818,7 +828,7 @@
     color: var(--text-color);
     font-size: 1.4rem;
     display: block;
-    padding: 4px 16px;
+    padding: 6px 16px;
     position: relative;
     right: 0;
     transition: right linear 0.1s;
@@ -877,6 +887,7 @@
 }
 
 .select__list {
+    display: none;
     position: absolute;
     top: 26px;
     left: 0;
@@ -885,7 +896,7 @@
     background-color: var(--white);
     padding: 8px 16px;
     list-style: none;
-    display: none;
+    z-index: 1;
 }
 .select__list::before {
     content: "";
@@ -976,8 +987,7 @@
     position: relative;
     margin-top: 12px;
     background-color: var(--white);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 2px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     top: 0;
     transition: top linear 0.1s;
@@ -991,6 +1001,9 @@
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: top center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .product__item-name {
@@ -1117,6 +1130,7 @@ i.product__item-like-icon--fill {
     font-weight: 500;
     background-color: rgba(255, 212, 36, 0.9);
     padding: 3px 2px;
+    border-top-right-radius: 2px;
 }
 .product__sale-off::after {
     content: "";
