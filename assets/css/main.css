@@ -9,11 +9,12 @@
 
 /* Header */
 .header {
-    height: 120px;
+    height: var(--header-height);
     background: linear-gradient(-180deg,#f53d2d,#ff6633)
 }
 
 .header__navbar {
+    height: var(--navbar-height);
     display: flex;
     justify-content: space-between;
 }
@@ -303,6 +304,55 @@
     font-weight: 400;
 }
 
+/* Header sort bar */
+.header__sort-bar {
+    display: none;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--header-sort-bar-height);
+    background-color: var(--white);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__sort-item {
+    flex: 1;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__sort-item--active .header__sort-link {
+    color: var(--primary-color);
+}
+
+.header__sort-link {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    height: 100%;
+    line-height: var(--header-sort-bar-height);
+    position: relative;
+}
+
+.header__sort-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 60%;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+}
+
+.header__sort-item:first-child .header__sort-link::before {
+    display: none;
+}
+
 /* Modal */
 
 .modal {
@@ -482,7 +532,7 @@
 /* Header logo, search, cart */
 
 .header-with-search {
-    height: 88px;
+    height: var(--header-with-search-height);
     display: flex;
     align-items: center;
 }
@@ -492,6 +542,7 @@
     height: 55px;
     display: flex;
     justify-content: center;
+    margin-right: 15px;
 }
 
 .header__logo-link {
@@ -662,7 +713,7 @@
     padding-left: 0;
     list-style: none;
     margin: 0;
-    height: 35vh;
+    max-height: 35vh;
     overflow-y: auto;
 }
 

@@ -4,6 +4,11 @@
     --black: #000;
     --text-color: #333;
     --c-silver: #ccc;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;
 }
 
 * {
@@ -30,16 +35,6 @@ html {
 }
 
 /* Responsive */
-
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__width--full {
-    width: 100%;
-}
 
 .grid__row {
     display: flex;

@@ -7,7 +7,9 @@
     <title>WebSHOP</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -17,8 +19,8 @@
     <div class="main">
         <!-- Header -->
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--separate">
                             <a href="#" class="header__navbar-item--link">Kênh Người Bán</a>
@@ -322,10 +324,24 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <div class="main__container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row main__content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -354,7 +370,7 @@
                         </nav>
                     </div>
                     <div class="grid__column-10">
-                        <div class="sort-bar">
+                        <div class="sort-bar hide-on-mobile-tablet">
                             <div class="sort-bar__title">Sắp xếp theo</div>
                             <button class="sort-bar__btn btn btn--primary">Phổ biến</button>
                             <button class="sort-bar__btn btn btn--normal">Mới nhất</button>
@@ -391,6 +407,186 @@
 
                         <div class="product__wrapper">
                             <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <a href="#" class="product__item">
+                                        <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
+                                        <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
+                                        <div class="product__item-price">
+                                            <span class="product__item-price--old">3.500.000đ</span>
+                                            <span class="product__item-price--new">2.800.000đ</span>
+                                        </div>
+                                        <div class="product__item-action">
+                                            <span class="product__item-action--like product__item--liked">
+                                                <i class="product__item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="product__item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__item-action--rate">
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__item-sold">Đã bán 1k</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin-brand">SamSung</span>
+                                            <span class="product__origin-place">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-percentage">20%</span>
+                                            <div class="product__sale-label">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="#" class="product__item">
+                                        <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
+                                        <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
+                                        <div class="product__item-price">
+                                            <span class="product__item-price--old">3.500.000đ</span>
+                                            <span class="product__item-price--new">2.800.000đ</span>
+                                        </div>
+                                        <div class="product__item-action">
+                                            <span class="product__item-action--like product__item--liked">
+                                                <i class="product__item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="product__item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__item-action--rate">
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__item-sold">Đã bán 1k</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin-brand">SamSung</span>
+                                            <span class="product__origin-place">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-percentage">20%</span>
+                                            <div class="product__sale-label">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="#" class="product__item">
+                                        <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
+                                        <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
+                                        <div class="product__item-price">
+                                            <span class="product__item-price--old">3.500.000đ</span>
+                                            <span class="product__item-price--new">2.800.000đ</span>
+                                        </div>
+                                        <div class="product__item-action">
+                                            <span class="product__item-action--like product__item--liked">
+                                                <i class="product__item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="product__item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__item-action--rate">
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__item-sold">Đã bán 1k</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin-brand">SamSung</span>
+                                            <span class="product__origin-place">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-percentage">20%</span>
+                                            <div class="product__sale-label">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="#" class="product__item">
+                                        <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
+                                        <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
+                                        <div class="product__item-price">
+                                            <span class="product__item-price--old">3.500.000đ</span>
+                                            <span class="product__item-price--new">2.800.000đ</span>
+                                        </div>
+                                        <div class="product__item-action">
+                                            <span class="product__item-action--like product__item--liked">
+                                                <i class="product__item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="product__item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__item-action--rate">
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__item-sold">Đã bán 1k</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin-brand">SamSung</span>
+                                            <span class="product__origin-place">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-percentage">20%</span>
+                                            <div class="product__sale-label">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="#" class="product__item">
+                                        <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
+                                        <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
+                                        <div class="product__item-price">
+                                            <span class="product__item-price--old">3.500.000đ</span>
+                                            <span class="product__item-price--new">2.800.000đ</span>
+                                        </div>
+                                        <div class="product__item-action">
+                                            <span class="product__item-action--like product__item--liked">
+                                                <i class="product__item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="product__item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__item-action--rate">
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="product__item-star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__item-sold">Đã bán 1k</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin-brand">SamSung</span>
+                                            <span class="product__origin-place">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-percentage">20%</span>
+                                            <div class="product__sale-label">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
                                 <div class="grid__column-2-4">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
@@ -613,7 +809,7 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
