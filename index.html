@@ -118,49 +118,17 @@
                         </li>
                         <li class="header__navbar-item header__navbar-item--subnav header__navbar-login-btn">
                             <a href="#" class="header__navbar-item--link header__navbar-item--medium">Đăng nhập</a>
-                            <div class="header__login obsolete">
-                                <header class="header__login-header">
-                                    <h3>Đăng nhập / Login</h3>
-                                </header>
-                                <div class="header__login-form">
-                                    <form action="">
-                                        <input type="text" class="header__login-form--input" placeholder="Email / Số điện thoại / Tên đăng nhập">
-                                        <input type="password" class="header__login-form--input" placeholder="Mật khẩu">
-                                        <input type="submit" class="header__login-form--btn" value="ĐĂNG NHẬP">                        
-                                    </form>
-                                    <div class="header__login-link--container">
-                                        <a href="#" class="header__login-link">Quên mật khẩu</a>
-                                        <a href="#" class="header__login-link">Đăng nhập với SMS</a>
-                                    </div>
-                                    <div class="header__login-other--container">
-                                        <div class="header__login-other--line"></div>
-                                        <p>HOẶC</p>
-                                        <div class="header__login-other--line"></div>
-                                    </div>
-                                    <div class="header__login-social--container">
-                                        <button class="header__login-social-btn">
-                                            <i class="header__login-social-icon fa-brands fa-facebook"></i>
-                                            Facebook
-                                        </button>
-                                        <button class="header__login-social-btn">
-                                            <i class="header__login-social-icon fa-brands fa-google"></i>
-                                            Google
-                                        </button>
-                                        <button class="header__login-social-btn">
-                                            <i class="header__login-social-icon fa-brands fa-apple"></i>
-                                            Apple
-                                        </button>
-                                    </div>
-                                </div>
-                                <footer class="header__login-footer">
-                                    <p>Bạn mới biết đến Shopee? <a href="#" class="header__login-footer--link">Đăng ký</a></p>                                    
-                                </footer>
-                            </div>
                         </li>
                     </ul>
                 </nav>
 
                 <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search--icon fa-solid fa-search">
+
+                        </i>
+                    </label>
+
                     <div class="header__logo">
                         <a href="" class="header__logo-link">
                             <svg viewBox="0 0 148.789 65" class="header__logo-img" xmlns="http://www.w3.org/2000/svg">
@@ -172,6 +140,8 @@
                             </svg>
                         </a>                                                   
                     </div>
+
+                    <input type="checkbox" hidden class="header__search-checkbox" id="mobile-search-checkbox">
 
                     <div class="header__search">
                         <div class="search__input--wrapper">
@@ -342,8 +312,8 @@
 
         <div class="main__container">
             <div class="grid wide">
-                <div class="grid__row main__content">
-                    <div class="grid__column-2">
+                <div class="row s-gutter main__content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="category__heading-icon fa-solid fa-list"></i>
@@ -369,7 +339,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="sort-bar hide-on-mobile-tablet">
                             <div class="sort-bar__title">Sắp xếp theo</div>
                             <button class="sort-bar__btn btn btn--primary">Phổ biến</button>
@@ -406,8 +376,8 @@
                         </div>
 
                         <div class="product__wrapper">
-                            <div class="grid__row">
-                                <div class="grid__column-2-4">
+                            <div class="row s-gutter">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -443,7 +413,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -479,7 +449,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -515,7 +485,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -551,7 +521,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -587,7 +557,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -623,7 +593,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -659,7 +629,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -695,7 +665,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -731,7 +701,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product__item">
                                         <div class="product__item-img" style="background-image: url(https://cf.shopee.vn/file/132b023a3114a559d7232b92e34e7f9c);"></div>
                                         <h4 class="product__item-name">Samsung Galaxy M12 (3GB/32GB) Lorem ipsum dolor sit amet consectetur</h4>
@@ -770,39 +740,43 @@
                             </div>
                         </div>
 
-                        <ul class="pagination content__pagination">
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item--link">
-                                    <i class="pagination__icon fa-solid fa-angle-left"></i>
-                                </a>
-                            </li>
-                            <li class="pagination__item pagination__item--active">
-                                <a href="" class="pagination__item--link">1</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item--link">2</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item--link">3</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item--link">4</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item--link">5</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item--link">...</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item--link">9</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item--link">
-                                    <i class="pagination__icon fa-solid fa-angle-right"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="pagination__wrapper">
+                            <div class="row">
+                                <ul class="col m-12 c-12 pagination content__pagination">
+                                    <li class="pagination__item">
+                                        <a href="" class="pagination__item--link">
+                                            <i class="pagination__icon fa-solid fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="pagination__item pagination__item--active">
+                                        <a href="" class="pagination__item--link">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="" class="pagination__item--link">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="" class="pagination__item--link">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="" class="pagination__item--link">4</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="" class="pagination__item--link">5</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="" class="pagination__item--link">...</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="" class="pagination__item--link">9</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="" class="pagination__item--link">
+                                            <i class="pagination__icon fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -810,8 +784,8 @@
 
         <footer class="footer">
             <div class="grid wide">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -825,7 +799,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Về ShoP</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -839,7 +813,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Thanh toán</h3>
                         <ul class="footer__list footer__pay-list">
                             <li class="footer__pay-method">
@@ -853,7 +827,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Theo dõi chúng tôi</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -876,7 +850,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Tải ứng dụng Shop</h3>
                         <div class="footer__qr">
                             <a href=""><img src="https://cf.shopee.vn/file/a5e589e8e118e937dc660f224b9a1472" alt="" class="footer__qr-img"></a>
@@ -887,7 +861,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__row footer__row_2">
+                <div class="row footer__row_2">
                     <ul class="footer__thisline">
                         <li class="footer__thisline-item">
                             <a class="footer__thisline-item--link" href="">CHÍNH SÁCH BẢO MẬT</a>
@@ -903,7 +877,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="grid__row footer__row_3">
+                <div class="row footer__row_3">
                     <p class="footer__text"><i class="fa-regular fa-copyright"></i> 2022 - Bản quyền thuộc về Công ty TNHH MTV Shop</p>
                 </div>
             </div>

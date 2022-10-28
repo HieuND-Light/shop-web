@@ -1,4 +1,7 @@
 /* Common */
+.main {
+    overflow: hidden;
+}
 
 .no-tap {
     cursor: text;
@@ -535,6 +538,16 @@
     height: var(--header-with-search-height);
     display: flex;
     align-items: center;
+}
+
+.header__mobile-search {
+    display: none;
+    padding: 0 20px;
+}
+
+.header__mobile-search--icon {
+    font-size: 2.2rem;
+    color: var(--white);
 }
 
 .header__logo {
@@ -1203,8 +1216,8 @@ i.product__item-like-icon--fill {
 
 /* Pagination */
 .content__pagination {
-    margin-top: 48px;
-    margin-bottom: 32px;
+    margin: 48px 0 32px 0;
+    padding: 0;
 }
 
 .pagination {
@@ -1212,6 +1225,8 @@ i.product__item-like-icon--fill {
     align-items: center;
     justify-content: center;
     list-style: none;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .pagination__item {
